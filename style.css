@@ -1,0 +1,366 @@
+/*Für die Allgemeine Seite werden Abstände und Absätze auf 0 gesetzt*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Die Überschrift wird auf eine Größe festgelegt*/
+#Überschrift{
+  font-size: 40px;
+}
+
+
+
+
+.navbar {
+  position: sticky;                   /*Die navbar soll immer oben beim runtercrollen angezeigt und (kleben) bleiben*/
+  top: 0;                              /*Kein Abstand nach oben*/
+  display: flex;                        /*Die Navbar soll Flexibl sein*/
+  margin: auto;                         /*Die Ausrichtung soll Automatisch geregelt werden*/
+  background-color: #7baeff;           /*Der Hintergund soll die ausgewählte Farbe haben*/
+  padding: 5px 0;                        /*Abstan 5px und 0 werden festgelegt (von 4 abständen werden 2 deklariert)*/
+  height: 80px;                          /*Die höhe der Navbar wird festgelegt*/
+  z-index: 1099;                         /*Wie weit die Navbar automatisch gehen soll*/
+}
+
+.navbar img{
+  height: 70px;                          /*Das Icon (img) bekommt eine höhe*/
+  cursor: pointer;                       /*Der cursor der Maus soll beim drübergehen anders sein*/
+}
+
+.navbar h5{
+  margin-left: 10px;                     /*Der Linke Abstand wir festgelegt*/
+  text-decoration: underline;           /*Die Textdecoration wird auf unterstrichen umgstellt*/
+}
+
+.navbar a {
+  color: white;                   /*Die farbe des Textes wird festgelegt*/
+  text-decoration: none;            /*Die Dekoratioen (unterschrichen) wird entfernt*/
+  padding: 0 15px;                  /*Die Textgröße wird festgelegt*/
+  font-size: 13px;                  /*Die Schriftgröße wird angepasst*/
+  transition: 0.5s ease ;           /*Ein effect der eine gewissen Zeitspanne andauern soll wird festgelegt*/
+}
+.navbar a:hover { 
+    text-decoration: none;          /*Die Textdekoration wir ausgeschalten*/
+    color: rgb(90, 90, 90);       /*Beim drübergehen (hover) soll eine andere Farbe angezeigt werden*/
+}
+
+.search{
+  margin-left: 15px;                  /*Der Abstand Links wird eingestellt*/
+}
+
+.eingabe{
+  border-radius: 20px;                /*Die Darstellung soll Abgerundet sein*/
+  height: 35px;                       /*Die Höhe wird festgelegt*/
+  transition: 0.5s ease-in-out ;      /*Ein effect der eine gewissen Zeitspanne andauern soll wird festgelegt*/
+} 
+.eingabe:focus{
+  background-color: transparent;      /*Der Hintergrund soll transparent sein, damit man den Text dadurch sieht*/
+  outline: none;                      /*Die ansicht der outline wird ausgeschaltet*/
+  color: white;                     /*Die Farbe soll auf weiß umspringen*/
+}
+
+.suchen{
+  height: 30px;                       /*Die Höhe wird festgelegt*/
+  width: 70px;                         /*Die Weite wird festgelegt*/
+  border-radius: 13px;                /*Die Darstellung soll abgerundet sein*/
+}
+
+
+/*Beim Drübergehen (hover) soll ein anderer Mauszeiger genutzt werden*/
+.suchen:hover{
+  cursor: pointer;
+}
+
+/*Die Höhe und Weite bekommt eine Angabe*/
+#beginn img{
+  width: 100%;
+  height: 100vh;
+}
+
+#beginn #Anfangstext{
+  position: absolute;                   /*Die Position soll immer dort (Absolut) sein*/
+  top: 20%;                             /*Darüber soll ein Abstand sein*/
+  left: 50%;                            /*Der Abstand Links*/
+  transform: translate(-50%, -50%);     /*Der Text bekommt weitere Angaben*/
+  color: white;                       /*Der Text soll weiß sein*/
+}
+
+
+.Hauptinfos{
+    width: auto;
+    margin: auto;
+    height: auto;
+    text-align: center;                                                                           /*Der Inhalt soll mittig sein*/
+    background: rgb(130,130,130);                                                               /*Der Hintergrund soll nach ausgesuchten Farbverlauf angezeigt werden (gemacht mit css gradiant generator)*/
+    background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(230,230,230,1) 100%);
+    margin-top: -10px;  
+    margin-bottom: 50px;
+    border-style: groove;
+}
+
+#Anfang{
+  margin-top: 10px;
+  text-decoration: underline;         /*Die Textdekoration soll Unterstrichen sein*/
+}
+
+#drachen-container{
+  display: flex;
+}
+
+/*Der Container des Textes soll eine festgelegte weite haben*/
+#drachen-container p{
+  width: 700px;
+}
+
+#Drachen-text{
+  border: outset; /* Rahmenstil wird auf 'outset' gesetzt */
+  margin: auto; /* Automatische Zentrierung des Elements */
+}
+
+.carosell{
+  width: 50%; /* Breite des Carousels auf 50% gesetzt */
+  margin: auto; /* Automatische Zentrierung des Carousels */
+  text-align: center; /* Text innerhalb des Carousels wird zentriert */
+  margin-bottom: 50px; /* Abstand nach unten von 50px */
+}
+
+.carosell img{
+  height: 550px; /* Höhe der Bilder auf 450px festgelegt */
+  border-radius: 20px; /* Ecken der Bilder werden mit 20px abgerundet */
+}
+
+#info{
+  margin-top: 5px; /* Oberer Abstand von 5px */
+  width: 800px; /* Breite auf 800px festgelegt */
+  margin: auto; /* Zentrierung des Elements */
+  margin-bottom: 20px; /* Unterer Abstand von 20px */
+}
+
+.info-box {
+  width: 70%; /* Breite der Box auf 70% des Elterncontainers gesetzt */
+  margin: auto; /* Zentrierung der Box */
+  padding: 20px; /* Innenabstand von 20px */
+  background-color: #f5f5f5; /* Hintergrundfarbe auf hellgrau gesetzt */
+  border-radius: 10px; /* Ecken werden mit 10px abgerundet */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Schatteneffekt für die Box */
+  text-align: center; /* Text innerhalb der Box wird zentriert */
+}
+
+.info-container {
+  display: flex; /* Flexbox-Layout für das Container-Element */
+  flex-direction: column; /* Elemente werden vertikal angeordnet */
+  gap: 10px; /* Abstand zwischen den Elementen von 10px */
+  align-items: center; /* Inhalte werden horizontal zentriert */
+}
+
+.info-item {
+  width: 80%; /* Breite der Info-Elemente auf 80% gesetzt */
+  padding: 10px; /* Innenabstand von 10px */
+  background: linear-gradient(90deg, rgba(200, 230, 250, 1) 0%, rgba(150, 200, 250, 1) 100%); /* Farbverlauf als Hintergrund */
+  border-radius: 8px; /* Ecken mit 8px abgerundet */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Leichter Schatteneffekt */
+}
+
+#Design{
+  border-radius: 10px; /* Ecken werden mit 10px abgerundet */
+}
+
+#Dragon{
+  border-radius: 20px; /* Ecken mit 20px abgerundet */
+  margin-bottom: 20px; /* Unterer Abstand von 20px */
+}
+
+#Table{
+  width: 600px; /* Breite der Tabelle auf 600px festgelegt */
+  margin: auto; /* Zentrierung der Tabelle */
+  box-shadow: gray 10px 10px 10px 10px; /* Grauer Schatten um die Tabelle */
+  margin-bottom: 30px; /* Unterer Abstand von 30px */
+}
+
+#Überschriften{
+  margin-top: 20px; /* Oberer Abstand von 20px für die Überschriften */
+}
+
+
+
+
+
+
+.Peghorn {
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  border-style: groove; /* Der Rand des Elements hat einen "Graben"-Effekt */
+  text-align: center; /* Der Text im Element wird zentriert */
+  margin-bottom: 50px; /* Der untere Abstand des Elements beträgt 50px */
+  background: rgb(244,228,250); /* Der Hintergrund hat eine RGB-Farbe (helles Violett) */
+  background: linear-gradient(90deg, rgba(244,228,250,1) 0%, rgba(226,193,250,1) 100%); /* Ein linearer Farbverlauf von links nach rechts von Hellviolett zu einem weiteren Violett-Ton */
+}
+
+#Vergleich-steckbriefe {
+  display: flex; /* Das Element verwendet ein Flexbox-Layout */
+  gap: 50px; /* Zwischen den Flex-Elementen gibt es einen Abstand von 50px */
+  margin-left: 30px; /* 30px Abstand von der linken Seite */
+  margin-right: 30px; /* 30px Abstand von der rechten Seite */
+}
+
+.info-box-vergleich {
+  width: 70%; /* Das Element nimmt 70% der Breite seines Elternelements ein */
+  margin: auto; /* Das Element wird horizontal in der Mitte ausgerichtet */
+  padding: 20px; /* 20px Innenabstand */
+  background-color: #ffdefa; /* Der Hintergrund ist ein helles Rosa */
+  border-radius: 10px; /* Abgerundete Ecken mit einem Radius von 10px */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Ein weicher Schatten um das Element */
+  text-align: center; /* Der Text wird im Element zentriert */
+}
+
+.info-container {
+  display: flex; /* Das Element verwendet ein Flexbox-Layout */
+  flex-direction: column; /* Die Flex-Elemente werden in einer Spalte angeordnet */
+  gap: 10px; /* Der Abstand zwischen den Elementen beträgt 10px */
+  align-items: center; /* Die Elemente werden horizontal zentriert */
+}
+
+.info-item-vergleich {
+  width: 80%; /* Das Element nimmt 80% der Breite seines Elternelements ein */
+  padding: 10px; /* 10px Innenabstand */
+  background: linear-gradient(90deg, rgba(10,8,24,1) 0%, rgba(222,92,187,1) 0%, rgba(187,81,173,1) 100%); /* Ein linearer Farbverlauf von Dunkelblau zu Lila und Pink */
+  border-radius: 8px; /* Abgerundete Ecken mit einem Radius von 8px */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ein weicher Schatten um das Element */
+}
+
+#Pegasus {
+  border-radius: 20px; /* Abgerundete Ecken mit einem Radius von 20px */
+}
+
+#Einhorn {
+  border-radius: 20px; /* Abgerundete Ecken mit einem Radius von 20px */
+  margin-left: 50px; /* 50px Abstand von der linken Seite */
+}
+
+#Pegahorn {
+  border-radius: 20px; /* Abgerundete Ecken mit einem Radius von 20px */
+  margin-bottom: 20px; /* 20px Abstand am unteren Rand */
+}
+
+.Texte {
+  display: flex; /* Das Element verwendet ein Flexbox-Layout */
+  width: 1300px; /* Die Breite des Elements ist auf 1300px festgelegt */
+  margin: auto; /* Das Element wird horizontal in der Mitte ausgerichtet */
+  border-radius: 30px; /* Abgerundete Ecken mit einem Radius von 30px */
+  border-style: groove; /* Der Rand hat einen "Graben"-Effekt */
+  margin-top: 30px; /* Der obere Abstand des Elements beträgt 30px */
+  margin-bottom: 50px; /* Der untere Abstand des Elements beträgt 50px */
+  text-align: center; /* Der Text wird im Element zentriert */
+}
+
+.Peg {
+  width: 45%; /* Das Element nimmt 45% der Breite seines Elternelements ein */
+  margin-left: 2%; /* 2% Abstand von der linken Seite */
+}
+
+.Horn {
+  width: 45%; /* Das Element nimmt 45% der Breite seines Elternelements ein */
+  margin-left: 5%; /* 5% Abstand von der linken Seite */
+}
+
+#Dartsellung {
+  text-align: center; /* Der Text wird im Element zentriert */
+  text-decoration: underline; /* Der Text ist unterstrichen */
+}
+
+.Griffen {
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  border-style: groove; /* Der Rand hat einen "Graben"-Effekt */
+  text-align: center; /* Der Text wird im Element zentriert */
+  margin-bottom: 50px; /* Der untere Abstand des Elements beträgt 50px */
+  background: rgb(246,247,233); /* Der Hintergrund hat eine RGB-Farbe (helles Beige) */
+  background: linear-gradient(95deg, rgba(246,247,233,1) 0%, rgba(242,246,210,1) 100%); /* Ein linearer Farbverlauf von hellbeige zu einem noch helleren Beige */
+}
+
+.info-Hyp {
+  width: 80%; /* Das Element nimmt 80% der Breite seines Elternelements ein */
+  padding: 10px; /* 10px Innenabstand */
+  background: linear-gradient(90deg, rgb(241, 225, 179) 0%, rgb(255, 233, 110) 100%); /* Ein linearer Farbverlauf von Gelb zu einem helleren Gelb */
+  border-radius: 8px; /* Abgerundete Ecken mit einem Radius von 8px */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ein weicher Schatten um das Element */
+  margin-bottom: 10px; /* 10px Abstand am unteren Rand */
+}
+
+
+
+
+
+
+
+
+.phoenix {
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  border-style: groove; /* Der Rand des Elements hat einen "Graben"-Effekt */
+  text-align: center; /* Der Text im Element wird zentriert */
+  margin-bottom: 50px; /* Der untere Abstand des Elements beträgt 50px */
+  background: rgb(255,238,227); /* Der Hintergrund hat eine RGB-Farbe (helles Creme) */
+  background: linear-gradient(95deg, rgba(255,238,227,1) 0%, rgba(238,208,173,1) 100%); /* Ein linearer Farbverlauf von Creme zu einem hellen Goldton */
+}
+
+.info-Pho {
+  width: 80%; /* Das Element nimmt 80% der Breite seines Elternelements ein */
+  padding: 10px; /* 10px Innenabstand */
+  background: linear-gradient(90deg, rgb(228, 188, 166) 0%, rgb(233, 139, 85) 100%); /* Ein linearer Farbverlauf von Gelb zu einem helleren Gelb */
+  border-radius: 8px; /* Abgerundete Ecken mit einem Radius von 8px */
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Ein weicher Schatten um das Element */
+  margin-bottom: 10px; /* 10px Abstand am unteren Rand */
+}
+
+
+
+
+
+
+
+.custom-footer {
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  margin-top: 20px; /* Der obere Abstand des Elements beträgt 20px */
+  border-top: 1px black solid; /* Ein 1px breiter schwarzer Rand oben am Element */
+  background-color: rgb(137, 137, 255); /* Der Hintergrund ist ein helles Blau */
+}
+
+.left {
+  float: left; /* Das Element wird nach links verschoben */
+  text-align: center; /* Der Text im Element wird zentriert */
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: 50%; /* Das Element nimmt 50% der Breite seines Elternelements ein */
+  margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+}
+
+.left button {
+  height: 30px; /* Die Höhe des Buttons beträgt 30px */
+  width: 120px; /* Die Breite des Buttons beträgt 120px */
+  outline: none; /* Der Standard-Umriss des Buttons wird entfernt */
+  background-color: transparent; /* Der Hintergrund des Buttons ist transparent */
+  border: 1px black solid; /* Ein 1px breiter schwarzer Rand um den Button */
+  border-radius: 30px; /* Abgerundete Ecken des Buttons mit einem Radius von 30px */
+}
+
+.left button:hover {
+  background-color: paleturquoise; /* Der Hintergrund des Buttons ändert sich bei Hover zu Paleturquoise */
+}
+
+.left p {
+  float: right; /* Der Text wird nach rechts verschoben */
+  padding-right: 10px; /* Ein Abstand von 10px nach rechts für den Text */
+}
+
+.right {
+  float: left; /* Das Element wird nach links verschoben */
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: 50%; /* Das Element nimmt 50% der Breite seines Elternelements ein */
+  text-align: center; /* Der Text im Element wird zentriert */
+  margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+}
+
+.copyright {
+  margin-top: 100px; /* Der obere Abstand des Elements beträgt 100px */
+  text-align: center; /* Der Text wird im Element zentriert */
+}

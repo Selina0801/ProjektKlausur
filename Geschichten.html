@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <title>Mögliche Geschichten</title><!--Titel vom oberen Fenster des offenen Links-->
+
+    <link rel="stylesheet" href="style1.css"><!--Verlinkung zu der zugehörigen css-->
+    <link rel="icon" href="Bilder/Logo.png">  <!--Das Logo wird in der Lesite angezeigt-->
+</head>
+<body>
+
+
+    <nav class="navbar"><!--Erstellung einer navbar-->
+        <!-- Navbar content -->
+        <a href="index.html"><img src="Bilder/Logo.png" alt=""></a> <!--Logo in der Navbar mit Verlinkung zur Startseite(index)-->
+
+        <div class="links">
+            <a href="index.html">Startseite</a><!--Link zur startseite-->
+            <a href="#">Mögliche Geschichten</a><!--Nicht Funktionierender Link, da wir aktuell auf der Seite sind-->
+
+            <form class="search" role="suche">
+                <input class="eingabe" type="e" placeholder="Eingabe" aria-label="Suche"><!--Nicht Funktionierende Suchfunktion für verschönerung-->
+                <button class="suchen" type="submit">Suche</button>
+            </form> 
+
+        </div>
+    </nav> <!--Beendigung der navbar-->
+
+
+<section class="Hauptcontent"> <!--Erstellung eines Containers für den Hauptinhalt-->
+
+
+
+  <div class="Buchdarstellung"> <!--Erstellung eines div für verschiedenen Inhalt einer Section-->
+
+    <div class="row mb-4"><!--Erstellung einer Reihe-->
+      <div class="col-lg-12 text-center">
+          <h1 class="Übersicht">Beliebte Buchreihe</h1><!--Überschrift-->
+      </div>
+    </div>
+
+    
+  <!-- Features Section -->
+  <div id="Flammengeküsst"> <!--Erstellung einer id um dem Inhalt eine andere größe zuweisen zu können-->
+  <div class="row mb-4">
+    <div class="col-md-4">
+
+      <!--Verlinkung zu dem Buchverkauf und als Bilddarstellung mit zugehöriger größeneinstellung-->
+       <a href="https://www.amazon.de/Fourth-Wing-%C2%BBUnwiderstehliches-Liebesgeschichte-Flammengek%C3%BCsst-Reihe/dp/3423283408"> <img id="Hervorkommen" class="img-fluid rounded mb-3" src="Bilder/Fourth Wing.png" alt="" height="500px" width="700px"></a>
+        <h3 class="Schrift">Fourth Wing</h3><!--Kleinere Überschrift des Buches-->
+        <p class="Schrift">Flieg oder Stirb</p><!--Nebentitel des Buches als Textinhalt-->
+    </div>
+
+    <div class="col-md-4">
+
+      <!--Verlinkung zu dem Buchverkauf und als Bilddarstellung mit zugehöriger größeneinstellung-->
+        <a href="https://www.amazon.de/Iron-Flame-bestseller-sensation-Empyrean/dp/034943705X"><img id="Hervorkommen" class="img-fluid rounded mb-3" src="Bilder/Iron Flame.png" alt="" height="500px" width="700px"></a>
+        <h3 class="Schrift">Iron Flame</h3><!--Kleinere Überschrift des Buches-->
+        <p class="Schrift">Lass es Brennen</p><!--Nebentitel des Buches als Textinhalt-->
+    </div>
+
+    <div class="col-md-4">
+
+      <!--Verlinkung zu dem Buchverkauf und als Bilddarstellung mit zugehöriger größeneinstellung-->
+        <a href="https://www.amazon.de/Onyx-Storm-DISCOVER-FOLLOW-UP-PHENOMENONS/dp/0349437076"><img id="Hervorkommen" class="img-fluid rounded mb-3" src="Bilder/Onyx Storm.jpg" alt="" height="500px" width="700px"></a>
+        <h3 class="Schrift">Onyx Storm</h3><!--Kleinere Überschrift des Buches-->
+        <p class="Schrift">Trotze der Dunkelheit</p><!--Nebentitel des Buches als Textinhalt-->
+    </div>
+   </div>
+
+
+
+<div id="Beschreibung">
+
+  <div class="accordion accordion-flush" id="accordionFlushExample"> <!--Erstellung eines Accordion aus Bootstrap-->
+
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button id="acordhead" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  Fourth Wing       <!--Text des ersten  Inhaltes-->
+              </button>
+          </h2>
+
+          <!--Inhalt des ersten  Accordions-->
+          <div class="backImage">
+              <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                  <div id="text" class="accordion-body">
+                      Ein Drache ohne seinen Reiter ist tragisch. Ein Reiter ohne seinen Drachen ist tot. <br>
+                      Violets Traum, Schriftgelehrte am renommierten Basgiath War College zu werden, zerplatzt jäh, da sie als Tochter der Generalin am Auswahlverfahren der Drachenreiter teilnehmen muss. 
+                      Das erste Jahr wird nicht einmal die Hälfte aller Bewerber überleben, denn Drachen binden keine schwachen Menschen, sie fackeln sie nieder. 
+                      Die meisten Kadetten wollen Violet allein aufgrund ihrer Herkunft niederstrecken – besonders Xaden, der mächtigste und skrupelloseste unter den Geschwaderführern. 
+                      Und ohne Frage auch der attraktivste. Ausgerechnet ihm wird Violet unterstellt. Sie wird jeden Vorteil nutzen müssen, wenn sie überleben will.
+                      Denn am Basgiath War College haben alle eine Agenda und es gibt nur zwei Wege hinaus: den Abschluss machen oder sterben.
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button id="acordhead" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Iron Flame <!--Text des zweiten öffnungsbaren Inhaltes-->
+              </button>
+          </h2>
+
+          <!--Inhalt des zweiten öffnungsbaren Accordions-->
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div id="text2" class="accordion-body">
+                  Wem kannst du vertrauen, wenn der größte Verräter dein eigenes Herz ist? <br>
+                  Violet muss entscheiden, ob sie ans tödliche Basgiath War College zurückkehren will … und inwieweit sie Xaden vertrauen kann.
+                  Alle hatten erwartet, dass Violet Sorrengail während ihres ersten Jahres am Basgiath War College sterben würde – Violet eingeschlossen. Doch sie hat überlebt.
+                  Das richtige Training beginnt erst jetzt und Violet fragt sich, wie sie das überstehen soll. Die Herausforderungen sind zermürbend, extrem brutal und dafür gedacht, die Schmerzgrenze der Reiter ins Unermessliche zu treiben, aber das größte Problem ist der neue Vizekommandeur, der Violet brechen will – es sei denn, sie hintergeht den Mann, den sie liebt.
+                  Auch wenn Violets Körper schwächer und fragiler ist, hat sie immer noch ihren Verstand – und ihren eisernen Willen. Und die wichtigste Lektion, die sie bisher gelernt hat, scheinen alle anderen zu vergessen: Drachenreiter machen ihre eigenen Regeln ...
+              </div>
+          </div>
+      </div>
+
+      <div class="accordion-item">
+          <h2 class="accordion-header">
+              <button id="acordhead" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Onyx Storm    	   <!--Text des dritten öffnungsbaren Inhaltes-->
+              </button>
+          </h2>
+
+          <!--Inhalt des dritten öffnungsbaren Accordions-->
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div id="text3" class="accordion-body">
+                  Bist du bereit, der Dunkelheit zu trotzen? <br>    
+                  Nach fast achtzehn Monaten am Basgiath War College weiß Violet, dass die Zeit für theoretische Übungen vorbei ist. Die Zeit für Unsicherheit ist vorbei. Denn der Krieg hat begonnen und mit Feinden sowohl innerhalb als auch außerhalb der Mauern ist es schwer, zu wissen, wem man vertrauen kann.
+                  Violet muss jenseits des Schutzzaubers in unbekannten Ländern nach Verbündeten suchen. Die Reise wird ihren Verstand, ihre Fähigkeiten und ihr Glück fordern, aber sie wird alles tun, um zu retten, was sie liebt: ihre Drachen, ihre Familie, ihre Heimat – und ihn.
+                  Selbst, wenn es bedeutet, ein Geheimnis zu bewahren, das alles zerstören könnte.
+                  Sie benötigen eine Armee. Sie benötigen Macht. Sie benötigen Magie. Und die eine Sache, die nur Violet finden kann: die Wahrheit. 
+                  Doch ein Sturm zieht auf … und nicht alle werden seinem Zorn standhalten können.
+              </div>
+          </div>
+      </div>  <!--Das Accordion und das erste Inhaltliche div werden beendes-->
+      </div>
+    </div>
+    </div>
+
+
+
+
+    <h1 class="Übersicht">Die Eragon Reihe</h1> <!--Neue Überschrift-->
+    <section class="Slider">
+
+      
+    <div class="row mb-4">
+    <div id="image-container" class="col-md-3">
+
+      <!--Verlinkung des Buches zu Amazon-->
+      <a href="https://www.amazon.de/Das-Verm%C3%A4chtnis-Drachenreiter-Eragon-Einzelb%C3%A4nde/dp/3570402932/ref=sr_1_2?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1EYNGEQM1LKA9&dib=eyJ2IjoiMSJ9.bQc07FJDrkfZByYbNugIN3rtJch6lqeVL_sYBXGDqPvfbLONb8-UNLHQeKqFX-lSiGIL3GZlJV41Ru0pClcaQLgq00fN0FvBHkMamXOelziStPsITSRyLgwgvttiN8Re98teaoqjVdLsCOfFdnHh8BZrX9ugtcVERt-2MgbuMhxoSq_qg_UXm71AL2IDIUvesCCrfimKyBG4GUGk3glLXLDqhSMdQKZ6cBZS6S4SElM.iW5_sFUumq2cgSzQVYV_8OMqlBSeb6UnGzKJOnqvE9c&dib_tag=se&keywords=eragon&qid=1740474922&sprefix=eragon+%2Caps%2C93&sr=8-2">
+        <div class="image-wrapper">
+
+          <!--Einfügen des Bildes und erstellung einer Festgelegten Größe-->
+          <img id="buch-bild" class="img-fluid rounded mb-3" src="Bilder/das-vermaechtnis-der-drachenreiter-eragon-band-1-taschenbuch-christopher-paolini.jpeg" alt="" height="300px" width="200px"> 
+
+          <!--Durch hover auftauchender Textinhalt des Buches-->
+          <div class="overlay-text">Als Eragon auf der Jagd einen blauen Stein findet, ahnt er nicht, dass dieser Fund sein Leben verändern wird. Denn aus dem Stein schlüpft ein Drachenjunges und beschert Eragon ein Vermächtnis, das älter ist als die Welt. Über Nacht wird er in eine schicksalhafte Welt voller Magie und dunkler Mächte geworfen, die regiert wird von einem Herrscher, dessen Grausamkeit keine Grenzen kennt. Mit nichts als einem Schwert bewaffnet, stellt sich Eragon dem Kampf gegen das Böse, an seiner Seite seine treue Gefährtin, der blaue Drache Saphira.</div>
+        </div>
+      </a>
+      <h3 class="Schrift">Das Vermächtnis der Drachenreiter</h3> <!--Buchtitel unter dem Inhalt-->
+
+    </div>
+  
+    <div id="image-container" class="col-md-3">
+
+      <!--Verlinkung des Buches zu Amazon-->
+      <a href="https://www.amazon.de/Auftrag-%C3%84ltesten-Eragon-Einzelb%C3%A4nde-Band/dp/3570402894/ref=pd_bxgy_thbs_d_sccl_1/262-9215444-7159511?pd_rd_w=cdBOI&content-id=amzn1.sym.e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_p=e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_r=P78KY0NS9M7ZD1SNWWRZ&pd_rd_wg=s7gWP&pd_rd_r=ceaac136-4a51-4137-8707-0d027d79b1d0&pd_rd_i=3570402894&psc=1">
+        <div class="image-wrapper">
+
+           <!--Einfügen des Bildes und erstellung einer Festgelegten Größe-->
+          <img id="buch-bild" class="img-fluid rounded mb-3" src="Bilder/DerAuftragdesÕøøtesten.jpg" alt="" height="300px" width="200px">
+          <div class="overlay-text">Erschöpft, aber siegreich gehen Eragon und sein Drache Saphira aus der ersten Schlacht gegen den Tyrannen Galbatorix hervor. Eragon ist zum Hoffnungsträger vieler Elfen, Zwerge und Varden geworden, doch nicht alle sind ihm wohlgesinnt. Die kräuterkundige Angela prophezeit einen Verräter, der aus Eragons eigener Familie stammen soll. Eragon ist sich sicher: Der einzig lebende Verwandte ist sein Cousin Roran – aber niemals würde dieser sich gegen ihn wenden! Doch die Prophezeiung spricht: »So wird es kommen, selbst wenn du es zu verhindern suchst.«</div>
+        </div>
+      </a>
+      <h3 class="Schrift">Der Auftrag des Ältesten</h3><!--Buchtitel unter dem Inhalt-->
+
+      <div class="buch-beschreibung"></div>
+    </div>
+  
+    <div id="image-container" class="col-md-3">
+
+      <!--Verlinkung des Buches zu Amazon-->
+      <a href="https://www.amazon.de/Die-Weisheit-Feuers-Eragon-Einzelb%C3%A4nde/dp/3570400875/ref=pd_bxgy_thbs_d_sccl_1/262-9215444-7159511?pd_rd_w=0zpua&content-id=amzn1.sym.e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_p=e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_r=1FDF09HPQSZHYGT1HG56&pd_rd_wg=HRQhe&pd_rd_r=8d1e145d-3872-4082-b1e1-096c55f48f0c&pd_rd_i=3570400875&psc=1">
+        <div class="image-wrapper">
+
+           <!--Einfügen des Bildes und erstellung einer Festgelegten Größe-->
+          <img id="buch-bild" class="img-fluid rounded mb-3" src="Bilder/Die Weisheit des Feuers.png" alt="" height="300px" width="200px">
+
+           <!--Durch hover auftauchender Textinhalt des Buches-->
+          <div class="overlay-text">Die Schlacht auf den brennenden Steppen haben die Rebellen gewonnen – und wieder brauen sich die dunklen Wolken des Krieges über Alagaësia zusammen. Galbatorix und seine Armee warten nur auf den geeigneten Zeitpunkt für einen Vergeltungsschlag. Varden, Elfen und Zwerge brauchen Eragons magische Fähigkeiten so dringend wie nie zuvor, aber der Drachenreiter hat den Schwur, den er seinem Cousin Roran gab, nicht vergessen: Im Helgrind, dem Unterschlupf der grausamen Ra’zac, wartet Rorans geliebte Katrina auf ihre Rettung. Ungeahnte Gefahren lauern dort, doch sie sind erst der Beginn einer abenteuerlichen Reise, die Eragon und seinen Drachen Saphira bis über die Grenzen des Königreichs führt.</div>
+        </div>
+      </a>
+      <h3 class="Schrift">Die Weisheit des Feuers</h3><!--Buchtitel unter dem Inhalt-->
+
+      <div class="buch-beschreibung"></div>
+    </div>
+
+
+
+    <div id="image-container" class="col-md-3">
+
+      <!--Verlinkung des Buches zu Amazon-->
+      <a href="https://www.amazon.de/Eragon-Erbe-Macht-Band-Einzelb%C3%A4nde/dp/3570402533/ref=pd_bxgy_thbs_d_sccl_1/262-9215444-7159511?pd_rd_w=S6Mlf&content-id=amzn1.sym.e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_p=e5049a5e-3c04-4839-b191-b8e7a9a74d34&pf_rd_r=GE6ZWE87BP0KHHH28BXY&pd_rd_wg=JN3VX&pd_rd_r=cce2b86d-df52-4b28-9560-56a5ed25c3b7&pd_rd_i=3570402533&psc=1">
+        <div class="image-wrapper">
+
+           <!--Einfügen des Bildes und erstellung einer Festgelegten Größe-->
+          <img id="buch-bild" class="img-fluid rounded mb-3" src="Bilder/DasErbederMacht.jpg" alt="" height="300px" width="200px">
+
+           <!--Durch hover auftauchender Textinhalt des Buches-->
+          <div class="overlay-text">Ein schrecklicher Krieg wütet in Alagaësia. Alle Völker haben sich zusammengeschlossen und ziehen in den Kampf gegen Galbatorix, den grausamen Herrscher des Imperiums. Eragon weiß, dass er und Saphira ihm irgendwann gegenüberstehen werden. Wird Eragon Galbatorix besiegen können? Oder muss er sich geschlagen geben? Eine Prophezeiung besagt, dass Eragon Alagaësia für immer verlassen wird …</div>
+        </div>
+      </a>
+      <h3 class="Schrift">Das Erbe der Macht</h3><!--Buchtitel unter dem Inhalt-->
+
+      <div class="buch-beschreibung"></div>
+    </div>
+  </div>
+      
+
+    </section> <!--Die Section wird beendet-->
+
+
+
+    <section class="Series">
+
+      <div class="container series-container">
+
+        <h2 class="Übersicht">Beliebte Serien</h2>             <!--Erstellung einer Überschrift-->
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">                      <!--Erstellung von Cards aus Bootstrap-->
+                    <img src="Bilder/Game of Thrones.png" class="card-img-top" alt="Game of Thrones">       <!--Einfügen des Bildes-->
+                    <div class="card-body">
+                        <h5 class="card-title">Game of Thrones</h5>
+                        <p class="card-text">Eine epische Fantasy-Serie basierend auf George R.R. Martins Romanreihe „Das Lied von Eis und Feuer“.</p>
+                        <p class="card-text">Die Serie spielt in den fiktiven Kontinenten Westeros und Essos und erzählt von Machtkämpfen zwischen Adelshäusern, Drachen und der geheimnisvollen Bedrohung aus dem Norden.</p>
+                        <a href="https://de.wikipedia.org/wiki/Game_of_Thrones" class="btn btn-custom" target="_blank">Mehr erfahren</a>      <!--Link + Button -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="Bilder/House of the Dragons.png" class="card-img-top" alt="House of the Dragon">          <!--Einfügen des Bildes-->
+                    <div class="card-body">
+                        <h5 class="card-title">House of the Dragon</h5>
+                        <p class="card-text">Das Prequel zu Game of Thrones, das sich mit der Geschichte des Hauses Targaryen beschäftigt.</p>
+                        <p class="card-text">Die Serie behandelt die Ereignisse rund um den Tanz der Drachen, einem Bürgerkrieg innerhalb des Hauses Targaryen, der den Untergang der Drachen markierte.</p>
+                        <p class="card-text">Aktuell warten alle gespannt auf die Dritte Staffel!</p>
+                        <a href="https://de.wikipedia.org/wiki/House_of_the_Dragon" class="btn btn-custom" target="_blank">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <div id="feature">
+      <h2 id="Verschönerung">Drachenzähmen leicht gemacht</h2>
+      <p>"Drachenzähmen leicht gemacht" ist eine beliebte Animationsserie, die die Abenteuer von Hicks und seinem Drachen Ohnezahn erzählt. Gemeinsam erleben sie spannende Abenteuer auf der Insel Berk.</p>
+      <div class="image-container">
+          <img src="Bilder/Fiktiv1.png" alt="Hicks und Ohnezahn">
+          <img src="Bilder/Fiktiv2.png" alt="Drachen auf Berk">
+          <img src="Bilder/Fiktiv3.png" alt="Spannende Drachenkämpfe">
+      </div>
+      <p>Die Serie ist bekannt für ihre epischen Drachenkämpfe, tiefgründigen Charaktere und atemberaubenden Animationen.</p>
+  </div>
+
+
+
+
+
+    <footer class="custom-footer"> <!--Mein Footer-->
+
+      <div class="left"> 
+        <h4>Über Mich</h4>
+        <a href="https://www.instagram.com/selina_08.01?utm_source=qr&igsh=djhib3R3djh3OW55"> <!--Der Link zu meiner Instaseite-->
+          <button>
+
+             <!--Ein Icon aus Bootstrap wird eingefügt-->
+            <svg xmlns="http://www.w3.org/2000/svg" color="mediumpurple" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg> 
+            <p>Instagram</p><!--Textinhalt-->
+          </button>
+        </a>
+    
+        <a href="https://www.snapchat.com/add/selina.snapt?share_id=WY2lwUE8j6o&locale=de-DE"><!--Der Link zu meiner Snapchatseite-->
+          <button>
+
+             <!--Ein Icon aus Bootstrap wird eingefügt-->
+            <svg xmlns="http://www.w3.org/2000/svg" color="gold" width="16" height="16" fill="currentColor" class="bi bi-snapchat" viewBox="0 0 16 16">
+              <path d="M15.943 11.526c-.111-.303-.323-.465-.564-.599a1 1 0 0 0-.123-.064l-.219-.111c-.752-.399-1.339-.902-1.746-1.498a3.4 3.4 0 0 1-.3-.531c-.034-.1-.032-.156-.008-.207a.3.3 0 0 1 .097-.1c.129-.086.262-.173.352-.231.162-.104.289-.187.371-.245.309-.216.525-.446.66-.702a1.4 1.4 0 0 0 .069-1.16c-.205-.538-.713-.872-1.329-.872a1.8 1.8 0 0 0-.487.065c.006-.368-.002-.757-.035-1.139-.116-1.344-.587-2.048-1.077-2.61a4.3 4.3 0 0 0-1.095-.881C9.764.216 8.92 0 7.999 0s-1.76.216-2.505.641c-.412.232-.782.53-1.097.883-.49.562-.96 1.267-1.077 2.61-.033.382-.04.772-.036 1.138a1.8 1.8 0 0 0-.487-.065c-.615 0-1.124.335-1.328.873a1.4 1.4 0 0 0 .067 1.161c.136.256.352.486.66.701.082.058.21.14.371.246l.339.221a.4.4 0 0 1 .109.11c.026.053.027.11-.012.217a3.4 3.4 0 0 1-.295.52c-.398.583-.968 1.077-1.696 1.472-.385.204-.786.34-.955.8-.128.348-.044.743.28 1.075q.18.189.409.31a4.4 4.4 0 0 0 1 .4.7.7 0 0 1 .202.09c.118.104.102.26.259.488q.12.178.296.3c.33.229.701.243 1.095.258.355.014.758.03 1.217.18.19.064.389.186.618.328.55.338 1.305.802 2.566.802 1.262 0 2.02-.466 2.576-.806.227-.14.424-.26.609-.321.46-.152.863-.168 1.218-.181.393-.015.764-.03 1.095-.258a1.14 1.14 0 0 0 .336-.368c.114-.192.11-.327.217-.42a.6.6 0 0 1 .19-.087 4.5 4.5 0 0 0 1.014-.404c.16-.087.306-.2.429-.336l.004-.005c.304-.325.38-.709.256-1.047m-1.121.602c-.684.378-1.139.337-1.493.565-.3.193-.122.61-.34.76-.269.186-1.061-.012-2.085.326-.845.279-1.384 1.082-2.903 1.082s-2.045-.801-2.904-1.084c-1.022-.338-1.816-.14-2.084-.325-.218-.15-.041-.568-.341-.761-.354-.228-.809-.187-1.492-.563-.436-.24-.189-.39-.044-.46 2.478-1.199 2.873-3.05 2.89-3.188.022-.166.045-.297-.138-.466-.177-.164-.962-.65-1.18-.802-.36-.252-.52-.503-.402-.812.082-.214.281-.295.49-.295a1 1 0 0 1 .197.022c.396.086.78.285 1.002.338q.04.01.082.011c.118 0 .16-.06.152-.195-.026-.433-.087-1.277-.019-2.066.094-1.084.444-1.622.859-2.097.2-.229 1.137-1.22 2.93-1.22 1.792 0 2.732.987 2.931 1.215.416.475.766 1.013.859 2.098.068.788.009 1.632-.019 2.065-.01.142.034.195.152.195a.4.4 0 0 0 .082-.01c.222-.054.607-.253 1.002-.338a1 1 0 0 1 .197-.023c.21 0 .409.082.49.295.117.309-.04.56-.401.812-.218.152-1.003.638-1.18.802-.184.169-.16.3-.139.466.018.14.413 1.991 2.89 3.189.147.073.394.222-.041.464"/>
+            </svg>
+            <p>Snapchat</p> <!--Textinhalt-->
+          </button>
+        </a>
+      </div>
+    
+      <div class="right">
+        <h4>Meine Empfhelung!</h4><!--eine Kleinere Überschrift-->
+        <p>
+          <p>Die Flammengeküsst Reihe von Rebecca Yarros ist ein fantastischer Einstig für Leser. Ich selbst bin sehr begeistert von der Buchrteihe und warte jetzt gespannt auf Band 4.</p>
+          <p>Demnächst erscheint das erste Buch einer neuen Buchreihe die ebenfalls in diesem genre bereits mit Vorfreude vorbestellt wird. Das Buch "IT TAKES A MONSTER" von Karolyn Ciseau. Erscheinungsdatum: 07.08.2025</p>
+          <a href="https://www.amazon.de/-/en/Karolyn-Ciseau-ebook/dp/B0DX26B5CJ/ref=sr_1_1?crid=3QNMMVR2029BO&dib=eyJ2IjoiMSJ9.vrSBz20s3BlAQjb3WI0tnlx6OnqqJVMYq6tvjZHbVic-GmN7XhgSabQj50Hxr-cdhjlyhjkUbUSZ5F5T0dNQuMRx-ZuhO61dc1oqItUUPhCyooIDge-w2X-HQ5HAuiG4n2gTelS4K9LkcMlPiF1bVJTMNWWZ2YI0vPeBeBcoTPwubP42wt8-jwM3BtWL08H2pySTznZwoGplLaiJ1oxLMFq0s2ZYBXrVFE8j6rbxZY05FjOT9bGweQWwLq2jyhMM5Tcbro0zgV0whmJCOBrvf9vbWlDbnSwrqHibhIcD9vwRejtdJHrJ_7IL46fBt8ttrU1F54YHN3RgWyS_bVbQOqZlU0chBrYUG9i1wQzI3T7vvBITLdTzU2gssAP2ZZC7dzJGzfJqsjLutroaJy2gqZo4Uls0ytDFHfUrn9xEbuRwENkGhcUMNUIemZ6sSIHx.8CVUjnYMUNmA_vkXBY3l-G-S92BN7viwKEJuMKTfuKw&dib_tag=se&keywords=it+takes+a+monster+deutsch&qid=1741452268&sprefix=it+takes+a+monster+deutsch%2Caps%2C95&sr=8-1">Klicke hier um zum Artikel zu gelangen!..</a>
+          
+      </p>
+      </div>
+    
+
+
+    
+      <div class="copyright">
+        <p>Copyright
+
+             <!--Ein Icon aus Bootstrap wird eingefügt-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512"/>
+          </svg>
+           2024 Selina Vogt. Alle Rechte vorbehalten. </p> <!--Cophyright geschützte Aussage-->
+      </div>
+    </footer> <!--Ende meines Footers-->
+    
+
+    
+</body>
+</html>
+
+

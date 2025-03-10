@@ -1,0 +1,340 @@
+* {
+  margin: 0px; /* Setzt den Außenabstand aller Elemente auf 0 */
+  padding: 0px; /* Setzt den Innenabstand aller Elemente auf 0 */
+  box-sizing: border-box; /* Ändert das Boxmodell, sodass Padding und Border in der Breite und Höhe eines Elements berücksichtigt werden */
+}
+
+#Überschrift {
+  font-size: 40px; /* Die Schriftgröße der Überschrift wird auf 40px gesetzt */
+}
+
+body {
+  background: rgb(130,130,130); /* Der Hintergrund wird in einem Grauton gesetzt */
+  background: linear-gradient(90deg, rgba(130,130,130,1) 0%, rgba(230,230,230,1) 100%); /* Ein linearer Verlauf von Grau zu hellem Grau */
+}
+
+.navbar {
+  position: sticky; /* Die Navbar bleibt am oberen Rand fixiert, wenn man nach unten scrollt */
+  top: 0; /* Die Navbar bleibt am oberen Rand des Viewports */
+  display: flex; /* Die Navbar verwendet Flexbox für die Anordnung ihrer Elemente */
+  margin: auto; /* Die Navbar wird horizontal zentriert */
+  background-color: #7baeff; /* Der Hintergrund der Navbar ist ein hellblau */
+  padding: 5px 0; /* Der Innenabstand beträgt oben und unten 5px */
+  height: 80px; /* Die Höhe der Navbar beträgt 80px */
+  z-index: 1099; /* Die Navbar hat einen hohen Z-Index, um sie über anderen Elementen anzuzeigen */
+}
+
+.navbar img {
+  height: 70px; /* Die Höhe des Navbar-Bildes beträgt 70px */
+  cursor: pointer; /* Der Mauszeiger wird zu einem Zeiger, wenn man über das Bild fährt */
+}
+
+.navbar h5 {
+  margin-left: 10px; /* Der linke Außenabstand des Textes beträgt 10px */
+  text-decoration: underline; /* Der Text wird unterstrichen */
+}
+
+.navbar a {
+  color: white; /* Die Textfarbe der Links ist weiß */
+  text-decoration: none; /* Die Unterstreichung der Links wird entfernt */
+  padding: 0 15px; /* Der Innenabstand links und rechts beträgt jeweils 15px */
+  font-size: 13px; /* Die Schriftgröße der Links beträgt 13px */
+  transition: 0.5s ease; /* Ein Übergangseffekt für die Links, der 0.5 Sekunden dauert */
+}
+
+.navbar a:hover {
+  text-decoration: none; /* Die Unterstreichung bleibt beim Hover weiterhin entfernt */
+  color: rgb(90, 90, 90); /* Die Textfarbe der Links wird grau beim Hover */
+}
+
+.search {
+  margin-left: 15px; /* Der linke Außenabstand des Suchfelds beträgt 15px */
+}
+
+.eingabe {
+  border-radius: 20px; /* Abgerundete Ecken mit einem Radius von 20px */
+  height: 35px; /* Die Höhe des Eingabefeldes beträgt 35px */
+  transition: 0.5s ease; /* Ein Übergangseffekt für das Eingabefeld */
+}
+
+.eingabe:focus {
+  background-color: transparent; /* Der Hintergrund des Eingabefeldes wird transparent, wenn es fokussiert wird */
+  outline: none; /* Der Umriss des Eingabefeldes wird entfernt */
+  color: white; /* Die Textfarbe wird weiß, wenn das Eingabefeld fokussiert ist */
+}
+
+.suchen {
+  border-radius: 15px; /* Abgerundete Ecken mit einem Radius von 15px */
+  height: 30px; /* Die Höhe des Such-Buttons beträgt 30px */
+  width: 70px; /* Die Breite des Such-Buttons beträgt 70px */
+}
+
+.suchen:hover {
+  cursor: pointer; /* Der Mauszeiger wird zum Zeiger, wenn man mit der Maus über den Button fährt */
+}
+
+.Hauptcontent {
+  width: auto; /* Die Breite des Hauptinhalts wird automatisch basierend auf dem Inhalt angepasst */
+  margin: auto; /* Der Hauptinhalt wird horizontal zentriert */
+}
+
+.karossel {
+  margin-top: 50px; /* Der obere Abstand des Karussells beträgt 50px */
+  margin: auto; /* Das Karussell wird horizontal zentriert */
+  width: 1000px; /* Die Breite des Karussells beträgt 1000px */
+  border-radius: 20px; /* Abgerundete Ecken mit einem Radius von 20px */
+}
+
+.Buchdarstellung {
+  margin-top: 50px; /* Der obere Abstand der Buchdarstellung beträgt 50px */
+}
+
+#Flammengeküsst {
+  width: 1300px; /* Die Breite des Elements "Flammengeküsst" beträgt 1300px */
+  margin: auto; /* Das Element wird horizontal zentriert */
+}
+
+#Hervorkommen:hover {
+  transform: scale(1.1); /* Das Element wird um 10% vergrößert, wenn man mit der Maus darüber fährt */
+  transition: .5s; /* Der Übergangseffekt dauert 0.5 Sekunden */
+  cursor: crosshair; /* Der Mauszeiger wird zu einem Fadenkreuz, wenn man über das Element fährt */
+}
+
+.Übersicht {
+  margin: auto; /* Das Element wird horizontal zentriert */
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt angepasst */
+  height: 60px; /* Die Höhe des Elements beträgt 60px */
+  border-radius: 30px; /* Abgerundete Ecken mit einem Radius von 30px */
+  border-style: groove; /* Der Rand hat einen "Graben"-Effekt */
+  text-align: center; /* Der Text im Element wird zentriert */
+  margin-bottom: 10px; /* Der untere Abstand beträgt 10px */
+}
+
+#image-container {
+  position: relative; /* Das Container-Element hat eine relative Positionierung */
+  overflow: hidden; /* Überschüssiger Inhalt, der über das Element hinausgeht, wird abgeschnitten */
+  margin-bottom: 30px; /* Der untere Abstand des Containers beträgt 30px */
+}
+
+.image-wrapper {
+  position: relative; /* Das Wrapper-Element hat eine relative Positionierung */
+  transition: transform 0.3s ease; /* Ein Übergangseffekt für das Bild im Wrapper */
+}
+
+.image-wrapper img {
+  width: 100%; /* Das Bild nimmt die volle Breite des Containers ein */
+  transition: transform 0.3s ease; /* Ein Übergangseffekt für das Bild */
+}
+
+.overlay-text {
+  position: absolute; /* Der Text ist absolut positioniert innerhalb des Containers */
+  bottom: 0; /* Der Text wird am unteren Rand des Containers positioniert */
+  left: 50%; /* Der Text wird horizontal zentriert */
+  transform: translateX(-50%); /* Der Text wird um die Hälfte seiner eigenen Breite nach links verschoben, um genau zu zentrieren */
+  color: white; /* Die Textfarbe ist weiß */
+  font-size: 16px; /* Die Schriftgröße beträgt 16px */
+  font-weight: bold; /* Der Text ist fett */
+  opacity: 0; /* Der Text ist zunächst unsichtbar */
+  transition: opacity 0.3s ease; /* Der Übergangseffekt für die Sichtbarkeit des Textes dauert 0.3 Sekunden */
+  text-align: center; /* Der Text wird zentriert */
+  background: rgba(0, 0, 0, 0.5); /* Der Hintergrund des Textes ist halbtransparent schwarz */
+  padding: 10px; /* Der Text hat 10px Innenabstand */
+  width: 100%; /* Der Text nimmt die volle Breite des Containers ein */
+}
+
+  
+  .buch-beschreibung {
+      opacity: 0; /* Das Element ist zunächst unsichtbar */
+      max-height: 0; /* Die maximale Höhe des Elements ist 0, wodurch es unsichtbar bleibt */
+      padding: 0 10px; /* Das Element hat keinen vertikalen Abstand, aber 10px Abstand auf der linken und rechten Seite */
+      font-size: 16px; /* Die Schriftgröße beträgt 16px */
+      color: #333; /* Die Textfarbe ist ein dunkles Grau */
+      transition: opacity 0.3s ease, max-height 0.3s ease, padding 0.3s ease; /* Übergänge für opacity, max-height und padding in 0.3 Sekunden */
+      margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+    }
+    
+    #image-container:hover .image-wrapper img {
+      transform: translateY(-20px); /* Wenn man mit der Maus über den Container fährt, wird das Bild um 20px nach oben verschoben */
+    }
+    
+    #image-container:hover .overlay-text {
+      opacity: 1; /* Wenn man mit der Maus über den Container fährt, wird der Text sichtbar (opacity 1) */
+    }
+    
+    #image-container:hover .buch-beschreibung {
+      opacity: 1; /* Wenn man mit der Maus über den Container fährt, wird die Buchbeschreibung sichtbar */
+      max-height: 500px; /* Die maximale Höhe des Elements wird auf 500px gesetzt, um die Buchbeschreibung sichtbar zu machen */
+      padding: 10px; /* Das Element erhält 10px Abstand auf allen Seiten */
+    }
+    
+    .Schrift {
+      text-align: center; /* Der Text in diesem Element wird zentriert */
+    }
+    
+    .Slider {
+      width: 1400px; /* Die Breite des Sliders beträgt 1400px */
+      margin: auto; /* Der Slider wird horizontal zentriert */
+      margin-top: 10px; /* Der obere Abstand des Sliders beträgt 10px */
+      margin-bottom: 10px; /* Der untere Abstand des Sliders beträgt 10px */
+    }
+    
+    .accordion-item {
+      border: none; /* Der Rand des Akkordeon-Elements wird entfernt */
+    }
+    
+    .accordion-header {
+      border: none; /* Der Rand des Akkordeon-Headers wird entfernt */
+    }
+    
+    #Beschreibung {
+      margin-bottom: 30px; /* Der untere Abstand des Elements beträgt 30px */
+      border: none; /* Der Rand des Elements wird entfernt */
+      outline: none; /* Der Umriss des Elements wird entfernt */
+      border-radius: 13px; /* Abgerundete Ecken des Elements mit einem Radius von 13px */
+    }
+    
+    #acordhead {
+      background-color: tan; /* Der Hintergrund des Akkordeon-Headers wird auf ein braunes "Tan" gesetzt */
+    }
+    
+    #text {
+      background-image: url(Bilder/back.jpg); /* Das Hintergrundbild des Elements wird auf das Bild "back.jpg" gesetzt */
+      color: white; /* Die Textfarbe wird auf weiß gesetzt */
+      border: none; /* Der Rand des Elements wird entfernt */
+    }
+    
+    #text2 {
+      background-image: url(Bilder/back2.png); /* Das Hintergrundbild des Elements wird auf das Bild "back2.png" gesetzt */
+      color: white; /* Die Textfarbe wird auf weiß gesetzt */
+      border: none; /* Der Rand des Elements wird entfernt */
+    }
+    
+    #text3 {
+      background-image: url(Bilder/back3.png); /* Das Hintergrundbild des Elements wird auf das Bild "back3.png" gesetzt */
+      color: white; /* Die Textfarbe wird auf weiß gesetzt */
+      border: none; /* Der Rand des Elements wird entfernt */
+    }
+    
+
+
+  .Series {
+    width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+    margin: auto; /* Das Element wird horizontal in der Mitte des Elternelements ausgerichtet */
+    margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+    margin-bottom: 10px; /* Der untere Abstand des Elements beträgt 10px */
+  }
+  
+  .card {
+    background-color: #333; /* Der Hintergrund des Karten-Elements ist ein dunkles Grau (fast schwarz) */
+    border-radius: 15px; /* Abgerundete Ecken des Elements mit einem Radius von 15px */
+    overflow: hidden; /* Überschüssiger Inhalt, der über die abgerundeten Ecken hinausgeht, wird abgeschnitten */
+    color: white; /* Der Text auf der Karte ist weiß */
+  }
+  
+  .card img {
+    transition: transform 0.3s ease; /* Eine sanfte Übergangsanimation für die Bildtransformation mit einer Dauer von 0.3 Sekunden */
+  }
+  
+  .card:hover img {
+    transform: scale(1.1); /* Das Bild wird um 10% vergrößert, wenn die Karte (das Element) mit der Maus berührt wird */
+  }
+  
+  .btn-custom {
+    background-color: #b30000; /* Der Hintergrund des Buttons ist ein dunkles Rot */
+    border: none; /* Der Button hat keinen sichtbaren Rand */
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff0000; /* Der Hintergrund des Buttons wird bei Hover (wenn die Maus darüber schwebt) zu einem helleren Rot */
+  }
+  
+
+
+
+
+#feature {
+  background: white; /* Der Hintergrund des Elements ist weiß */
+  padding: 20px; /* Das Element erhält einen Innenabstand von 20px */
+  border-radius: 10px; /* Abgerundete Ecken des Elements mit einem Radius von 10px */
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* Ein weicher Schatten mit 10px Unschärfe, um das Element hervorzuheben */
+  width: 1300px; /* Die Breite des Elements ist auf 1300px festgelegt */
+  margin: auto; /* Das Element wird horizontal in der Mitte des Elternelements ausgerichtet */
+  text-align: center; /* Der Text im Element wird zentriert */
+}
+
+#Verschönerung {
+  color: #d32f2f; /* Die Textfarbe ist ein kräftiges Rot (Hex-Farbe) */
+}
+
+.image-container {
+  display: flex; /* Das Element verwendet ein Flexbox-Layout */
+  justify-content: center; /* Die Flex-Elemente werden horizontal zentriert */
+  gap: 10px; /* Der Abstand zwischen den Flex-Elementen beträgt 10px */
+  flex-wrap: wrap; /* Die Flex-Elemente können in mehreren Reihen umgebrochen werden, wenn der Platz nicht ausreicht */
+}
+
+.image-container img {
+  width: 30%; /* Jedes Bild nimmt 30% der Breite des Containers ein */
+  height: auto; /* Die Höhe des Bildes wird automatisch angepasst, um das Seitenverhältnis zu erhalten */
+  border-radius: 8px; /* Abgerundete Ecken der Bilder mit einem Radius von 8px */
+  transition: transform 0.3s; /* Eine sanfte Übergangsanimation, wenn das Bild transformiert wird (z. B. beim Hover) */
+}
+
+.image-container img:hover {
+  transform: scale(1.1); /* Das Bild wird um 10% vergrößert, wenn man mit der Maus darüber fährt */
+}
+
+
+
+
+
+
+
+
+  
+.custom-footer {
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: auto; /* Die Breite des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  margin-top: 20px; /* Der obere Abstand des Elements beträgt 20px */
+  border-top: 1px black solid; /* Ein 1px breiter schwarzer Rand oben am Element */
+  background-color: rgb(137, 137, 255); /* Der Hintergrund ist ein helles Blau */
+}
+
+.left {
+  float: left; /* Das Element wird nach links verschoben */
+  text-align: center; /* Der Text im Element wird zentriert */
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: 50%; /* Das Element nimmt 50% der Breite seines Elternelements ein */
+  margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+}
+
+.left button {
+  height: 30px; /* Die Höhe des Buttons beträgt 30px */
+  width: 120px; /* Die Breite des Buttons beträgt 120px */
+  outline: none; /* Der Standard-Umriss des Buttons wird entfernt */
+  background-color: transparent; /* Der Hintergrund des Buttons ist transparent */
+  border: 1px black solid; /* Ein 1px breiter schwarzer Rand um den Button */
+  border-radius: 30px; /* Abgerundete Ecken des Buttons mit einem Radius von 30px */
+}
+
+.left button:hover {
+  background-color: paleturquoise; /* Der Hintergrund des Buttons ändert sich bei Hover zu Paleturquoise */
+}
+
+.left p {
+  float: right; /* Der Text wird nach rechts verschoben */
+  padding-right: 10px; /* Ein Abstand von 10px nach rechts für den Text */
+}
+
+.right {
+  float: left; /* Das Element wird nach links verschoben */
+  height: auto; /* Die Höhe des Elements wird automatisch basierend auf dem Inhalt festgelegt */
+  width: 50%; /* Das Element nimmt 50% der Breite seines Elternelements ein */
+  text-align: center; /* Der Text im Element wird zentriert */
+  margin-top: 10px; /* Der obere Abstand des Elements beträgt 10px */
+}
+
+.copyright {
+  margin-top: 100px; /* Der obere Abstand des Elements beträgt 100px */
+  text-align: center; /* Der Text wird im Element zentriert */
+}
